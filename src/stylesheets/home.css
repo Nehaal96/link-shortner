@@ -187,14 +187,14 @@
 }
 
 .secondary-title {
-  font-size: 2vw !important;
+  font-size: 2.5vw !important;
   font-weight: 700;
 }
 
 .secondary-description {
   color: rgb(149, 145, 145);
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   letter-spacing: 0.01em;
   text-align: center;
   padding: 1em 2em;
@@ -210,6 +210,29 @@
 
 #navbar-collapse[style="display: none;"].li.collapsed {
   background-color: transparent;
+}
+
+
+@media (max-width: 790px) {
+  .secondary-title {
+    font-size: 5vw !important;
+  }
+
+  .secondary-description {
+    font-size: 3vw !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .link-container {
+    justify-content: space-around;
+    padding: .5em .5em !important;
+  }
+
+  .link-generator-description {
+    padding-top: 4em !important;
+  }
+
 }
 
 @media (max-width: 660px) {
@@ -236,14 +259,6 @@
     align-items: center;
   }
 
-  .secondary-title {
-    font-size: 5vw !important;
-  }
-
-  .secondary-description {
-    font-size: 3vw;
-  }
-
   .button {
     font-size: 1rem !important;
   }
@@ -266,27 +281,17 @@
   }
 }
 
-
-
-@media (max-width: 700px) {
-  .link-container {
-    justify-content: space-around;
-    padding: .5em .5em !important;
-  }
-}
-
 @media (max-width: 551px) {
 
   .link-decoration,
   .list-button {
     justify-content: space-around;
-
     padding: .5em .5em !important;
-
     font-size: 2.8vw !important;
   }
 
   .home-detailed-view {
     padding: 0em;
   }
+
 }

@@ -43,7 +43,6 @@ export default {
   methods: {
     ...mapActions(["getFormattedUrl", "clearInput"]),
     shortenUrl() {
-      console.log(this.url);
       if (this.url) {
         this.getFormattedUrl(this.url);
       } else {
